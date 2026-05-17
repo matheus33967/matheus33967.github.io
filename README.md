@@ -26,6 +26,8 @@ Este projeto foi desenvolvido pensando na formação técnica e superior de:
 
 ## 📸 Demonstração
 
+<img width="1408" height="2972" alt="Gemini_Generated_Image_st23gkst23gkst23" src="https://github.com/user-attachments/assets/d19f9dc9-9ac3-4937-b12a-aa844c13e70f" />
+<img width="1408" height="2972" alt="Gemini_Generated_Image_v1v40kv1v40kv1v4" src="https://github.com/user-attachments/assets/e21c1bf5-f388-46cd-8671-7edc0c7c108b" />
 
 ---
 
