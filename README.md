@@ -45,7 +45,7 @@ Se você tiver dúvidas, sugestões ou precisar de suporte técnico, entre em co
 ---
 
 ## ⚖️ Links Importantes
-* [Política de Privacidade](https://matheus33967.github.io/bioferreira.dev/privacy)
-* [Termos de Uso](https://matheus33967.github.io/bioferreira.dev/termos)
-* [Validação do AdMob (app-ads.txt)](https://matheus33967.github.io/bioferreira.dev/app-ads.txt)
+* [Política de Privacidade](https://matheus33967.github.io/privacy)
+* [Termos de Uso](https://matheus33967.github.io/termos)
+* [Validação do AdMob (app-ads.txt)](https://matheus33967.github.io/app-ads.txt)
 
