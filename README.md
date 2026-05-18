@@ -45,6 +45,6 @@ Se você tiver dúvidas, sugestões ou precisar de suporte técnico, entre em co
 ---
 
 ## ⚖️ Links Importantes
-* [Política de Privacidade](https://matheus33967.github.io/bioferreira.dev/privacy)
-* [Termos de Uso](https://matheus33967.github.io/bioferreira.dev/termos)
+* [Política de Privacidade](https://matheus33967.github.io/privacy)
+* [Termos de Uso](https://matheus33967.github.io/termos)
 
