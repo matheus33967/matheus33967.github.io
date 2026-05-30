@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Reagente Lab</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; padding: 30px; background-color: #f9f9f9; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; font-size: 28px; }
+        h2 { color: #2980b9; margin-top: 25px; font-size: 20px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        p, li { font-size: 15px; color: #555; }
+        ul { padding-left: 20px; }
+        .highlight { background-color: #f7dc6f; padding: 2px 5px; border-radius: 3px; font-weight: bold; }
+        .links-terceiros a { color: #2980b9; text-decoration: none; font-weight: bold; }
+        .links-terceiros a:hover { text-decoration: underline; }
+        footer { margin-top: 40px; text-align: center; font-size: 12px; color: #95a5a6; border-top: 1px solid #edf2f7; padding-top: 20px; }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>Política de Privacidade — Reagente Lab</h1>
+    <p><strong>Data de vigência:</strong> 29 de maio de 2026</p>
+    <p>Bem-vindo ao aplicativo <strong>Reagente Lab</strong> (identificado internamente como projeto "reagentes" ou LabMonitorApp). Temos o firme compromisso de proteger a sua privacidade. Esta Política de Privacidade explica detalhadamente como suas informações são coletadas, usadas, armazenadas e protegidas por nosso ecossistema de software, disponível na Google Play Store.</p>
+    <p>O Reagente Lab é uma solução de software como serviço (SaaS B2B) voltada para o setor de saúde e gestão laboratorial, desenhada especificamente para o monitoramento de estoque, rastreabilidade e controle de reagentes entre diferentes unidades ou filiais físicas de um laboratório.</p>
+
+    <hr style="border: 0; height: 1px; background: #eee; margin: 20px 0;">
+
+    <h2>1. Informações que Coletamos</h2>
+    <p>Para assegurar uma experiência colaborativa, multiusuário e baseada em regras estritas de segurança, coletamos os seguintes dados:</p>
+    <ul>
+        <li><strong>Informações Pessoais de Cadastro:</strong> Ao criar uma conta ou ingressar em uma equipe, coletamos seu nome e endereço de e-mail. Caso opte por realizar a autenticação rápida via Google Sign-In, recebemos o seu endereço de e-mail e nome de perfil público disponibilizados pelo Google.</li>
+        <li><strong>Dados Operacionais do Aplicativo:</strong> Armazenamos na nuvem todos os dados inseridos por você para a gestão do laboratório, incluindo o inventário de reagentes químicos/biológicos, níveis de estoque, prazos de validade, alertas, históricos de consumo e configurações de unidades/filiais.</li>
+        <li><strong>Preferências de Interface e Filtros:</strong> Para agilizar a rotina laboratorial, coletamos e salvamos suas preferências de uso, como esquemas de temas (Claro/Escuro) e seus "Filtros Salvos" (Presets de buscas para auditorias ou reposições urgentes).</li>
+        <li><strong>Dados de Assinaturas e Pagamentos:</strong> Caso você gerencie uma assinatura de planos (Grátis, Equipe ou Corporativo), os dados da transação são validados através da Google Play Store e controlados pela biblioteca RevenueCat. <span class="highlight">Nós não processamos, não temos acesso e nem armazenamos dados do seu cartão de crédito ou dados bancários.</span></li>
+        <li><strong>Identificadores Técnicos:</strong> Coletamos identificadores exclusivos do dispositivo de forma nativa para controle de sessões e integridade de dados.</li>
+    </ul>
+
+    <h2>2. Como Usamos Suas Informações</h2>
+    <p>Os dados coletados são mapeados estritamente para as seguintes finalidades operacionais:</p>
+    <ul>
+        <li>Para fornecer, manter e sincronizar em nuvem as tabelas de estoque e painéis de controle do laboratório.</li>
+        <li>Para gerenciar sua conta e garantir a autenticação de forma segura via Firebase Authentication.</li>
+        <li>Para estruturar a <strong>hierarquia de permissões</strong> do sistema: garantindo que o <strong>Administrador (Owner)</strong> gerencie a equipe e que os <strong>Plantonistas/Analistas</strong> acessem apenas as unidades autorizadas (via Código de Convite).</li>
+        <li>Para alimentar o modelo <strong>Offline-First</strong> da aplicação, permitindo que as tabelas de reagentes e filtros salvos funcionem instantaneamente no cache local mesmo em condições de perda de conexão com a internet.</li>
+        <li>Para processar limites de usuários ativos nas equipes e gerenciar o período de "Trial" automatizado por meio do RevenueCat.</li>
+        <li>Para nos comunicarmos com você a respeito de suporte técnico ou avisos críticos de administração da conta.</li>
+    </ul>
+
+    <h2>3. Serviços de Terceiros e Infraestrutura</h2>
+    <p>O aplicativo utiliza serviços e SDKs de terceiros estritamente necessários para a execução da sua infraestrutura central. Esses provedores possuem políticas próprias de processamento de dados:</p>
+    <ul>
+        <li><strong>Google Play Services:</strong> Infraestrutura básica do Android para distribuição, atualizações e serviços do sistema.</li>
+        <li><strong>Firebase (Google):</strong> Hospedagem serverless da nossa aplicação. Utilizamos o <em>Firebase Authentication</em> (login seguro), <em>Cloud Firestore</em> (banco de dados NoSQL resiliente) e <em>Firebase Cloud Functions</em> (responsável pela validação do conceito <strong>Zero Trust</strong> nas ações críticas de aprovação de membros).</li>
+        <li><strong>Google Sign-In:</strong> Mecanismo opcional para facilitar a criação e o login rápido de contas.</li>
+        <li><strong>RevenueCat:</strong> Plataforma para a verificação técnica de recibos e gerenciamento de assinaturas in-app.</li>
+    </ul>
+    
+    <p class="links-terceiros"><strong>Links para as Políticas de Privacidade dos provedores utilizados:</strong><br>
+        • <a href="https://policies.google.com/privacy" target="_blank">Google & Google Play Services Privacy Policy</a><br>
+        • <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a><br>
+        • <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a>
+    </p>
+
+    <h2>4. Armazenamento e Segurança dos Dados</h2>
+    <p>Valorizamos imensamente a segurança das informações operacionais do seu laboratório. Todos os dados coletados são criptografados em trânsito (utilizando protocolos HTTPS/TLS de última geração) e armazenados de maneira segura nos servidores em nuvem do Firebase (Google).</p>
+    <p>A arquitetura do Reagente Lab bloqueia qualquer acesso direto não autorizado ao banco de dados externo por meio de regras de segurança rígidas executadas diretamente no servidor (Cloud Functions). No entanto, lembramos que nenhum método de transmissão eletrônica ou armazenamento em nuvem é 100% infalível, e embora usemos os melhores padrões comerciais de proteção, não podemos garantir segurança absoluta.</p>
+
+    <h2>5. Retenção e Exclusão de Dados</h2>
+    <p>Retemos seus dados de perfil e registros de estoque enquanto sua conta e o ambiente do seu laboratório estiverem ativos. Conforme preconizado pela LGPD e pelas políticas da Google Play Store, o usuário possui o direito de exigir a remoção de todos os seus registros pessoais do sistema.</p>
+    <p>Você pode solicitar a exclusão definitiva diretamente pelas configurações de perfil dentro do aplicativo ou acessando a nossa página externa de suporte:</p>
+    <p>👉 <a href="https://matheus33967.github.io/reagentelab/exclusao.html" target="_blank">Página Oficial de Solicitação de Exclusão de Conta</a></p>
+    <p>Após a confirmação da solicitação, o e-mail, nome, vínculos de equipe e preferências do usuário serão completamente eliminados dos nossos bancos de dados ativos.</p>
+
+    <h2>6. Privacidade de Crianças</h2>
+    <p>Nossos serviços são estritamente corporativos e não são direcionados ou destinados a menores de 18 anos. Não coletamos intencionalmente informações de identificação pessoal de menores de idade.</p>
+
+    <h2>7. Alterações a Esta Política de Privacidade</h2>
+    <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos para acompanhar melhorias operacionais no aplicativo ou mudanças nas legislações vigentes. Notificaremos os usuários publicando o novo texto atualizado nesta página e, sempre que possível, enviando um alerta visual amigável nas telas do aplicativo.</p>
+
+    <h2>8. Contato</h2>
+    <p>Se você tiver alguma dúvida, sugestão sobre nossa política ou precisar realizar alguma requisição manual sobre seus dados de usuário, entre em contato através dos canais oficiais:</p>
+    <ul>
+        <li><strong>E-mail de Suporte:</strong> <a href="mailto:matheusmarques.marques33@gmail.com">matheusmarques.marques33@gmail.com</a></li>
+        <li><strong>Portal Informativo:</strong> <a href="https://matheus33967.github.io/" target="_blank">matheus33967.github.io</a></li>
+    </ul>
+
+    <footer>
+        <p><strong>Reagente Lab</strong> — Solução Inteligente de Gestão Laboratorial B2B</p>
+        <p>Desenvolvido com a tecnologia Flutter & ecossistema Cloud Firebase</p>
+    </footer>
+</div>
+
+</body>
+</html>
